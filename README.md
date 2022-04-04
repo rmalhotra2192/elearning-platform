@@ -4,7 +4,7 @@ This repository contains the development code and dependencies related to the de
 
 ### Tech Stack
 
-The backend api of the application is developed using python, fastAPI & MongoDB.
+The backend api of the application is developed using python, fastAPI & PostgreSQL.
 
 The frontend of the application is developed using Vue & Tailwind.
 
