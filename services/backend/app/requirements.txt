@@ -1,0 +1,10 @@
+fastapi
+fastapi-crudrouter
+SQLAlchemy
+SQLAlchemy-Utils
+psycopg2-binary
+python-jose
+passlib
+uvicorn
+psycopg2cffi
+python-multipart
