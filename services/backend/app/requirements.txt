@@ -8,3 +8,4 @@ passlib
 uvicorn
 psycopg2cffi
 python-multipart
+bcrypt
