@@ -1,0 +1,10 @@
+version: '3'
+services:
+  backend:
+    image: 
+    ports:
+      - 8001:8000
+  frontend:
+    image: ./services/frontend
+    ports:
+      - 8080:8080
