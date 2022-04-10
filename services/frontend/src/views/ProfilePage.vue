@@ -87,7 +87,7 @@ export default {
 
       axios({
         method: "post",
-        url: "http://127.0.0.1:8001/register",
+        url: "http://" + location.hostname + ":8000/register",
         data: data,
       })
         .then((response) => {

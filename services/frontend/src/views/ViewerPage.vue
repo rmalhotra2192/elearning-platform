@@ -91,18 +91,20 @@ export default {
     },
   },
   created() {
-    axios.get("http://127.0.0.1:8001/chapter").then((response) => {
-      this.chapters = [];
+    axios
+      .get("http://" + location.hostname + ":8000/chapter")
+      .then((response) => {
+        this.chapters = [];
 
-      for (let chapter of response.data) {
-        if (chapter.course_id == this.$route.params.c_id)
-          this.chapters.push(chapter);
-      }
+        for (let chapter of response.data) {
+          if (chapter.course_id == this.$route.params.c_id)
+            this.chapters.push(chapter);
+        }
 
-      this.chapters.sort(this.reorder);
+        this.chapters.sort(this.reorder);
 
-      this.current_chapter = this.chapters[0];
-    });
+        this.current_chapter = this.chapters[0];
+      });
   },
 };
 </script>

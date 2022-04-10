@@ -46,7 +46,12 @@ export default {
   },
   created() {
     axios
-      .get("http://127.0.0.1:8001/course/" + this.$route.params.courseid)
+      .get(
+        "http://" +
+          location.hostname +
+          ":8000/course/" +
+          this.$route.params.courseid
+      )
       .then((response) => (this.course = response.data));
   },
 };

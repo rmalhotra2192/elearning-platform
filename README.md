@@ -12,7 +12,5 @@ The frontend of the application is developed using Vue & Tailwind.
 
 The project throughout the development process will integrate the CI/CD methodology and will follow the following development workflow.
 
-[![CICD-Workflow.png](https://i.postimg.cc/x8Nkk0zY/CICD-Workflow.png)](https://postimg.cc/LgR4wFD0)
-
-To explore the ongoing and upcoming development tasks, visit this url - https://github.com/rmalhotra2192/elearning-platform/projects
+[![Docker-Environment.png](https://i.postimg.cc/Gt9q0WCg/Docker-Environment.png)](https://postimg.cc/V0QjnH5X)
 

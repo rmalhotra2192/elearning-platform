@@ -3,7 +3,7 @@ export default {
   login(store, router, data) {
     axios({
       method: "post",
-      url: "http://127.0.0.1:8001/token",
+      url: "http://" + location.hostname + ":8000/token",
       data: data,
       headers: {
         "Content-Type": "multipart/form-data",
@@ -20,7 +20,7 @@ export default {
 
         axios({
           method: "get",
-          url: "http://127.0.0.1:8001/users/me/",
+          url: "http://" + location.hostname + ":8000/users/me/",
           headers: header,
         }).then((response) => {
           let user = response;
@@ -43,7 +43,7 @@ export default {
   register(router, data) {
     axios({
       method: "post",
-      url: "http://127.0.0.1:8001/register",
+      url: "http://" + location.hostname + ":8000/register",
       data: data,
     })
       .then((response) => {
