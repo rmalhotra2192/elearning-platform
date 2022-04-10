@@ -1,7 +1,13 @@
 version: 0.2
 phases:
+  env:
+    secrets-manager:
+      DOCKERHUB_PASS: '/dockerhub/credentials:password'
+      DOCKERHUB_USERNAME: '/dockerhub/credentials:username'
   pre_build:
     commands:
+      - echo Logging in to Docker Hub.....
+      - docker login --username $DOCKERHUB_USERNAME --password $DOCKERHUB_PASS
       - echo Logging in to Amazon ECR.....
       - aws ecr get-login-password --region us-east-1 | docker login --username AWS --password-stdin 892080518105.dkr.ecr.us-east-1.amazonaws.com
   build:
@@ -10,17 +16,17 @@ phases:
       - cd services/frontend/
       - docker build -t elearning-platform_frontend -f Dockerfile-prod .
       - echo Building the Backend Docker image...
-      - cd ../services/backend/app
+      - cd ../backend/app
       - docker build -t elearning-platform_backend -f Dockerfile .
   post_build:
     commands:
       - echo Renaming the Frontend Docker image...
-      - cd services/frontend/
+      - cd ../../frontend/
       - sudo docker tag elearning-platform_frontend 892080518105.dkr.ecr.us-east-1.amazonaws.com/elearning-platform_frontend
       - echo Pushing the Frontend Docker image to ECR...
       - docker push 892080518105.dkr.ecr.us-east-1.amazonaws.com/elearning-platform_frontend
       - echo Renaming the Backend Docker image...
-      - cd services/backend/app
+      - cd ../backend/app
       - sudo docker tag elearning-platform_backend 892080518105.dkr.ecr.us-east-1.amazonaws.com/elearning-platform_backend
       - echo Pushing the Backend Docker image to ECR...
       - docker push 892080518105.dkr.ecr.us-east-1.amazonaws.com/elearning-platform_backend
