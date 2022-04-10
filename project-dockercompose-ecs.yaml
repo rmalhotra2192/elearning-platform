@@ -1,7 +1,7 @@
 version: '3'
 services:
   backend:
-    image: 892080518105.dkr.ecr.us-east-1.amazonaws.com/elearning-platform_backend:latest
+    image: 892080518105.dkr.ecr.us-east-1.amazonaws.com/elearning-platform_backend:1.1
     ports:
       - 8000
   frontend:
