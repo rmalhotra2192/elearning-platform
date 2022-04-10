@@ -6,3 +6,5 @@ services:
       - 8000
   frontend:
     image: 892080518105.dkr.ecr.us-east-1.amazonaws.com/elearning-platform_frontend:latest
+    ports:
+      - 80
