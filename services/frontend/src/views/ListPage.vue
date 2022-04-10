@@ -115,7 +115,7 @@ export default {
     },
   },
   mounted() {
-    axios.get("http://127.0.0.1:8001/course").then((response) => {
+    axios.get("http://backend.elearning-platform.local:8000/course").then((response) => {
       this.courses = response.data;
       this.get_courses_for_current_page();
     });
