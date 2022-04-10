@@ -2,7 +2,7 @@ version: 0.2
 phases:
   pre_build:
     commands:
-      - echo Logging in to Amazon ECR...
+      - echo Logging in to Amazon ECR.....
       - aws ecr get-login-password --region us-east-1 | docker login --username AWS --password-stdin 892080518105.dkr.ecr.us-east-1.amazonaws.com
   build:
     commands:
@@ -10,7 +10,7 @@ phases:
       - cd services/frontend/
       - docker build -t elearning-platform_frontend -f Dockerfile-prod .
       - echo Building the Backend Docker image...
-      - cd services/backend/app
+      - cd ../services/backend/app
       - docker build -t elearning-platform_backend -f Dockerfile .
   post_build:
     commands:
