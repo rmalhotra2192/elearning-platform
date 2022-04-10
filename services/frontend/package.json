@@ -9,6 +9,8 @@
   },
   "dependencies": {
     "axios": "^0.26.1",
+    "autoprefixer": "^10.0.2",
+    "postcss": "^8.1.7",
     "core-js": "^3.8.3",
     "postcss-loader": "^6.2.1",
     "vue": "^3.2.13",
