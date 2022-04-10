@@ -115,10 +115,12 @@ export default {
     },
   },
   mounted() {
-    axios.get("http://backend.elearning-platform.local:8000/course").then((response) => {
-      this.courses = response.data;
-      this.get_courses_for_current_page();
-    });
+    axios
+      .get("http://backend.elearning-platform.local:8000/course")
+      .then((response) => {
+        this.courses = response.data;
+        this.get_courses_for_current_page();
+      });
   },
 };
 </script>
