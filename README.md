@@ -12,5 +12,5 @@ The frontend of the application is developed using Vue & Tailwind.
 
 The project throughout the development process will integrate the CI/CD methodology and will follow the following development workflow.
 
-[![Docker-Environment.png](https://i.postimg.cc/Gt9q0WCg/Docker-Environment.png)](https://postimg.cc/V0QjnH5X)
+[![Docker-Environment-2.png](https://i.postimg.cc/GtV6BYnb/Docker-Environment-2.png)](https://postimg.cc/n9K3gXLW)
 

@@ -87,7 +87,7 @@ export default {
 
       axios({
         method: "post",
-        url: "http://" + location.hostname + ":8000/register",
+        url: "http://" + location.hostname + ":8000/update",
         data: data,
       })
         .then((response) => {

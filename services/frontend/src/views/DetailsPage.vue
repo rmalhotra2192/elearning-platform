@@ -3,6 +3,7 @@
     <detail-description
       v-if="course"
       :course="course"
+      :chapters="chapters"
       class="col-span-12 lg:col-span-10"
     ></detail-description>
     <div class="col-span-12 lg:col-span-2">
@@ -42,7 +43,15 @@ export default {
   data() {
     return {
       course: null,
+      chapters: null,
     };
+  },
+  methods: {
+    reorder(x, y) {
+      if (x.order < y.order) return -1;
+      if (x.order > y.order) return 1;
+      return 0;
+    },
   },
   created() {
     axios
@@ -53,6 +62,19 @@ export default {
           this.$route.params.courseid
       )
       .then((response) => (this.course = response.data));
+
+    axios
+      .get("http://" + location.hostname + ":8000/chapter/")
+      .then((response) => {
+        this.chapters = [];
+
+        for (let chapter of response.data) {
+          if (chapter.course_id == this.$route.params.courseid)
+            this.chapters.push(chapter);
+        }
+
+        this.chapters.sort(this.reorder);
+      });
   },
 };
 </script>

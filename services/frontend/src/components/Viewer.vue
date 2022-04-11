@@ -1,6 +1,6 @@
 <template>
-  <div class="mx-10 my-5">
-    <div class="space-y-4 mx-auto lg:w-8/12" v-html="chapter['content']"></div>
+  <div class="my-5 mx-auto">
+    <div class="space-y-4 mx-auto" v-html="chapter['content']"></div>
   </div>
 </template>
 

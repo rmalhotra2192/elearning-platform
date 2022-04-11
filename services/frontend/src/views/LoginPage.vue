@@ -34,11 +34,11 @@
           >
             Sign In
           </button>
-          <router-link
+          <!-- <router-link
             to="/resetpassword"
             class="transform text-center text-gray-500 duration-200 hover:text-gray-800 font-light"
             >Forgot password?</router-link
-          >
+          > -->
         </div>
 
         <div class="text-center text-lg">

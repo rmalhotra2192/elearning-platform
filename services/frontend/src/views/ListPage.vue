@@ -1,7 +1,7 @@
 <template>
-  <div class="w-7/12 mx-auto">
+  <div class="lg:w-4/5 mx-auto">
     <div class="my-10">
-      <h1 class="text-4xl">Courses Available</h1>
+      <h1 class="text-4xl">All Available Courses</h1>
       <hr class="my-2 border-gray-400 border-dashed" />
     </div>
     <div>

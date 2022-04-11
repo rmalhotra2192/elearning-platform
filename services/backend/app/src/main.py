@@ -283,11 +283,6 @@ async def register(request: Request):
     session.close()
     return
 
-
-@app.get("/users/me/items/")
-async def read_own_items(current_user: Users = Depends(get_current_active_user)):
-    return [{"item_id": "Foo", "owner": current_user.email}]
-
 Base.metadata.create_all(bind=engine)
 
 app.include_router(
