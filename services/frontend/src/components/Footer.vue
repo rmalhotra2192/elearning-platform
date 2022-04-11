@@ -11,13 +11,19 @@
       class="flex flex-wrap items-center mt-3 text-sm text-gray-500 dark:text-gray-400 sm:mt-0"
     >
       <li>
-        <a href="#" class="mr-4 hover:underline md:mr-6">About</a>
+        <router-link to="/about" class="mr-4 hover:underline md:mr-6"
+          >About</router-link
+        >
       </li>
       <li>
-        <a href="#" class="mr-4 hover:underline md:mr-6">Courses</a>
+        <router-link to="/" class="mr-4 hover:underline md:mr-6"
+          >Courses</router-link
+        >
       </li>
       <li>
-        <a href="#" class="mr-4 hover:underline md:mr-6">Login</a>
+        <router-link to="/login" class="mr-4 hover:underline md:mr-6"
+          >Login</router-link
+        >
       </li>
     </ul>
   </footer>

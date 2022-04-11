@@ -37,6 +37,7 @@ export default {
         });
       })
       .catch(function (response) {
+        alert("Login Failed!. Please try again with valid credentials.");
         console.log(response);
       });
   },

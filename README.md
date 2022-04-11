@@ -1,16 +1,40 @@
-# E-Learning Platform Development Project
+# Etudier - Elearning Project 
 
-This repository contains the development code and dependencies related to the development of an E-learning Platform project as a part of my internship project under PMC 250 Program Curriculum at Seneca College.
+Etudier is a web application for a hypothetical E-learning platform called Etudier (french for "to study"). The application is developed by me as a part of my PMC 250 Program Curriculum at Seneca College. 
 
-### Tech Stack
+The overall objective of creating this project and deploying it end to end was to gain a robust understanding about how to build agile development and integration pipelines like CI/CD using AWS Developer tools like - AWS CodePipeline and AWS CodeBuild.
 
-The backend api of the application is developed using python, fastAPI & PostgreSQL.
+The application is deployed currently on the following url - http://mycicdproject.tk
 
-The frontend of the application is developed using Vue & Tailwind.
+The code to the project can be accessed at the following github url - https://github.com/rmalhotra2192/elearning-platform
 
-### Development Workflow
+The application is built upon the following Technology stack:
+- Frontend
+  - Vue.JS for SPA functionality
+  - HTML & Tailwind CSS for UI
+- Backend
+  - Python
+  - FastAPI
+- Database
+  - AWS RDS Powered PostgreSQL for Data persistence
+- Source Version Control
+  - Github
+- Environment Handling
+  - Docker Containers
+- Deployment
+  - AWS CodePipeline for orchestrating the complete build and deployment process
+  - AWS CodeBuild for building Docker Container images
+  - AWS ECR for storing docker container images
+  - AWS Cloud Formation for creating and managing Infrastructure as Code
+  - AWS ECS Cluster for deploying the application on the Fargate instances (serverless).
 
-The project throughout the development process will integrate the CI/CD methodology and will follow the following development workflow.
+
+
+The project is powered using AWS ECS cluster that is automatically deployed using CI/CD pipeline. The CI/CD pipeline is built using the AWS CodePipeline, AWS CodeBuild and AWS CloudFormation Services and is triggered when changes are detected in source code repository i.e. github repository. 
+
+The architecture of the application is depicted in the below given diagram.
 
 [![Docker-Environment-2.png](https://i.postimg.cc/GtV6BYnb/Docker-Environment-2.png)](https://postimg.cc/n9K3gXLW)
+
+
 

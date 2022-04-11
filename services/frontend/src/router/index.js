@@ -1,4 +1,5 @@
 import { createRouter, createWebHistory } from "vue-router";
+import AboutPage from "../views/AboutPage.vue";
 import DetailsPage from "../views/DetailsPage.vue";
 import LoginPage from "../views/LoginPage.vue";
 import SignupPage from "../views/SignupPage.vue";
@@ -83,11 +84,11 @@ const routes = [
       return true;
     },
   },
-  // {
-  //   path: "/about",
-  //   name: "about",
-  //   component: ListPage,
-  // },
+  {
+    path: "/about",
+    name: "about",
+    component: AboutPage,
+  },
 ];
 
 const router = createRouter({
