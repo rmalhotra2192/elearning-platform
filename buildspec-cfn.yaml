@@ -17,7 +17,7 @@ phases:
       - docker context use demoecs
   build:
     commands:
-      - echo Convert Compose File
+      - echo Convert Compose File...
       - docker --debug compose -f "project-dockercompose-ecs.yaml" convert > cloudformation.yaml
 artifacts:
   files:
