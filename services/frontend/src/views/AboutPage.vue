@@ -3,7 +3,7 @@
     <section class="mb-16 text-gray-800">
       <div class="grid md:grid-cols-2 gap-4">
         <div class="mb-6 md:mb-0">
-          <h2 class="text-3xl font-bold mb-6">About</h2>
+          <h2 class="text-4xl font-bold mb-6">About</h2>
 
           <p class="text-gray-500">
             This is where we describe what "Etudier" is all about.
