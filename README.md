@@ -1,6 +1,6 @@
 # Etudier - Elearning Project 
 
-Etudier is a web application for a hypothetical E-learning platform called Etudier (french for "to study"). The application is developed by me as a part of my PMC 250 Program Curriculum at Seneca College. 
+Etudier is a web application for a hypothetical E-learning platform called Etudier (french for "to study"). 
 
 The overall objective of creating this project and deploying it end to end was to gain a robust understanding about how to build agile development and integration pipelines like CI/CD using AWS Developer tools like - AWS CodePipeline and AWS CodeBuild.
 
