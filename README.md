@@ -4,8 +4,6 @@ Etudier is a web application for a hypothetical E-learning platform called Etudi
 
 The overall objective of creating this project and deploying it end to end was to gain a robust understanding about how to build agile development and integration pipelines like CI/CD using AWS Developer tools like - AWS CodePipeline and AWS CodeBuild.
 
-The application is deployed currently on the following url - http://mycicdproject.tk
-
 The code to the project can be accessed at the following github url - https://github.com/rmalhotra2192/elearning-platform
 
 The application is built upon the following Technology stack:
