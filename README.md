@@ -38,3 +38,15 @@ The architecture of the application is depicted in the below given diagram.
 
 [![AWS-Cloud-Formation.png](https://i.postimg.cc/SNFhg6JQ/AWS-Cloud-Formation.png)](https://postimg.cc/mhwJDFYK)
 
+### AWS Elastic Container Registry
+
+[![AWS-Elastic-Container-Registry.png](https://i.postimg.cc/hPLq6XdL/AWS-Elastic-Container-Registry.png)](https://postimg.cc/qzvYCMQq)
+
+### AWS Elastic Container Service
+
+[![AWS-Elastic-Container-Service.png](https://i.postimg.cc/T3TX6TVZ/AWS-Elastic-Container-Service.png)](https://postimg.cc/rKZHGXYJ)
+
+### AWS Code Pipeline Environment
+
+[![AWS-Code-Pipeline-Environment.png](https://i.postimg.cc/T3Qv2BQh/CICD-Pipeline-using-AWS-Code-Pipeline.png)](https://postimg.cc/18gjJCkZ)
+
