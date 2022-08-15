@@ -34,5 +34,7 @@ The architecture of the application is depicted in the below given diagram.
 
 [![Docker-Environment-2.png](https://i.postimg.cc/GtV6BYnb/Docker-Environment-2.png)](https://postimg.cc/n9K3gXLW)
 
+### AWS Cloud Formation Environment
 
+[![Docker-Environment-2.png](https://i.postimg.cc/GtV6BYnb/Docker-Environment-2.png)](https://postimg.cc/mhwJDFYK)
 
